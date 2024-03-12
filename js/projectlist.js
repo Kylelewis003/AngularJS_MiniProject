@@ -1,23 +1,23 @@
 const projects = [
   {
     id: 1,
-    name: 'Ethiopia Project',
+    name: 'Akio Ecommerce Project',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    featured_image: 'Rectangle_21.jpg',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+      "Akio is an innovative e-commerce platform designed to promote eco-friendly and sustainable products. Built using Angular, this website aims to provide a seamless and user-friendly shopping experience while prioritizing environmental sustainability. From organic clothing to eco-friendly home goods, GreenCart offers a wide range of products that are both stylish and environmentally responsible.",
+    featured_image: 'ECOM.png',
+    technologies: ['HTML/CSS', 'Angular', 'Javascript'],
     live_link: '#',
-    source_link: '#',
+    source_link: 'https://github.com/Kylelewis003/EcommerceWebsite',
   },
   {
     id: 2,
-    name: 'Project Two',
+    name: 'User Information Application',
     description:
-      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
-    featured_image: 'Rectangle_21.jpg',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
+      'The User Management System is a robust CRUD (Create, Read, Update, Delete) application designed to efficiently manage user information within an organization or any system requiring user data management. Built using Angular, this application offers a seamless and intuitive interface for administrators to perform CRUD operations on user data, facilitating easy management and maintenance of user records.',
+    featured_image: 'user.png',
+    technologies: ['HTML/CSS', 'Angular', 'MySql'],
     live_link: '#',
-    source_link: '#',
+    source_link: 'https://github.com/Kylelewis003/DBMS_MINI_PROJECT',
   },
   {
     id: 3,
@@ -52,9 +52,9 @@ const renderedProjects = projects
               <div class="project-description">
                 <h3>${element.name}</h3>
                 <div class="project-actions">
-                  <button type="button">HTML/CSS</button>
-                  <button type="button">Ruby on Rails</button>
-                  <button type="button">Javascript</button>
+                  <button type="button">${element.technologies[0]}</button>
+                  <button type="button">${element.technologies[1]}</button>
+                  <button type="button">${element.technologies[2]}</button>
                 </div>
                 <button type="button" id="${element.name}" onclick="showPopup('${element.id}')" class="see-project-btn">
                   See this project &#10132;
